@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+# /.env
+/.env.serveur
+/tmp
+/upload
+ 
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+ 
+/package-lock.json
+ 
+# IDEs and editors
+/.idea
+/.history
+/.vscode
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace

@@ -1,0 +1,88 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is the documentation for API.",
+    "version": "1.0.0",
+    "title": "NodeJs APP",
+    "contact": {
+      "email": "noreply@mariemchaabeni.tn"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/users": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "User List",
+        "description": "",
+        "operationId": "UserList",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+      
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "422": {
+            "description": "Unproccessble entity"
+          }
+        }
+      },
+      "post": {
+       
+        "summary": "Add a new User",
+        "description": "",
+        "operationId": "AddUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "User",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "user name",
+                  "example": "Mariem Chaabeni"
+                }
+              }
+            }
+          }
+      
+        ],
+        "responses": {
+          "200": {
+            "description": "success"
+          },
+          "422": {
+            "description": "Unproccessble entity"
+          },
+          "401": {
+            "description": "unauthorized"
+          }
+        }
+      }
+    }
+  }
+}

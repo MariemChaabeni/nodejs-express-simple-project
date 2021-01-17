@@ -1,0 +1,4 @@
+
+# do not run Prettier against JavaScript files
+# in "node_modules/" folders
+**/node_modules/*.js
